@@ -1,8 +1,8 @@
-name: Oromie
+name: Adalgiza V. Rimoli
 markdown: redcarpet
 pygments: true
 excerpt_separator: <!--more-->
 gems: [jekyll-paginate]
 paginate: 3
 paginate_path: "blog/page:num"
-url: 'http://www.oromie.com.br/oromiedevel.github.io'
+url: ""
