@@ -1,3 +1,8 @@
+---
+---
+
+@import "colors";
+
 meta.foundation-version {
   font-family: "/5.2.2/";
 }
@@ -49,8 +54,8 @@ body {
 }
 
 body {
-  background: #efe2d4;
-  color: #803232;
+  background: $light;
+  color: $dark;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1370,7 +1375,7 @@ select {
 }
 .accordion .content.active {
   display: block;
-  background: white;
+  background: $light;
 }
 
 .alert-box {
@@ -1383,7 +1388,7 @@ select {
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   font-size: 0.8125rem;
   transition: opacity 300ms ease-out;
-  background-color: #fcbf31;
+  background-color: $dark-hover;
   border-color: #fbb207;
   color: white;
 }
@@ -1395,7 +1400,7 @@ select {
   top: 50%;
   margin-top: -0.6875rem;
   right: 0.25rem;
-  color: #f000f0;
+  color: $dark;
   opacity: 0.3;
 }
 .alert-box .close:hover, .alert-box .close:focus {
@@ -1418,9 +1423,9 @@ select {
   color: white;
 }
 .alert-box.secondary {
-  background-color: #e7e7e7;
-  border-color: #c7c7c7;
-  color: #4f4f4f;
+  background-color: #ff0000;
+  border-color: #00ff00;
+  color: #0000ff;
 }
 .alert-box.warning {
   background-color: #f08a24;
@@ -1430,7 +1435,7 @@ select {
 .alert-box.info {
   background-color: #a0d3e8;
   border-color: #74bfdd;
-  color: #4f4f4f;
+  color: #00ff00;
 }
 .alert-box.alert-close {
   opacity: 0;
@@ -1873,13 +1878,13 @@ select {
   font-size: 0.6875rem;
   line-height: 0.6875rem;
   text-transform: uppercase;
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
   text-decoration: underline;
 }
 .breadcrumbs > * a {
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .breadcrumbs > *.current {
   cursor: default;
@@ -1935,16 +1940,16 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #fcbf31;
-  border-color: #eda703;
-  color: #f0f000;
+  background-color: $dark-hover;
+  border-color: $dark-hover;
+  color: $light-super;
   transition: background-color 300ms ease-out;
 }
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #eda703;
+  background-color: $dark;
 }
 button:hover, button:focus, .button:hover, .button:focus {
-  color: #f33333;
+  color: $dark;
 }
 button.secondary, .button.secondary {
   background-color: #e7e7e7;
@@ -1960,24 +1965,24 @@ button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button
 button.success, .button.success {
   background-color: #f3ac6a;
   border-color: #368a55;
-  color: #333333;
+  color: $dark;;
 }
 button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
   background-color: #f68a55;
 }
 button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-  color: #333333;
+  color: $dark;;
 }
 button.alert, .button.alert {
   background-color: #f04124;
   border-color: #cf2a0e;
-  color: #333333;
+  color: $dark;;
 }
 button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
   background-color: #cf2a0e;
 }
 button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-  color: #333333;
+  color: $dark;;
 }
 button.large, .button.large {
   padding-top: 1.125rem;
@@ -2020,9 +2025,9 @@ button.round, .button.round {
   border-radius: 1000px;
 }
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #fcbf31;
+  background-color: $dark-hover;
   border-color: #eda703;
-  color: #333333;
+  color: $dark;;
   cursor: default;
   opacity: 0.7;
   box-shadow: none;
@@ -2031,15 +2036,15 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
   background-color: #eda703;
 }
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  color: #333333;
+  color: $dark;;
 }
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #fcbf31;
+  background-color: $dark-hover;
 }
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
   background-color: #e7e7e7;
   border-color: #b9b9b9;
-  color: #333333;
+  color: $dark;;
   cursor: default;
   opacity: 0.7;
   box-shadow: none;
@@ -2048,7 +2053,7 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
   background-color: #b9b9b9;
 }
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-  color: #333333;
+  color: $dark;;
 }
 button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
   background-color: #e7e7e7;
@@ -2056,7 +2061,7 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
   background-color: #43ac6a;
   border-color: #368a55;
-  color: #333333;
+  color: $dark;;
   cursor: default;
   opacity: 0.7;
   box-shadow: none;
@@ -2065,7 +2070,7 @@ button.disabled.success:hover, button.disabled.success:focus, button[disabled].s
   background-color: #f68a55;
 }
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-  color: #333333;
+  color: $dark;;
 }
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
   background-color: #43ac6a;
@@ -2073,7 +2078,7 @@ button.disabled.success:hover, button.disabled.success:focus, button[disabled].s
 button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
   background-color: #f04124;
   border-color: #cf2a0e;
-  color: #333333;
+  color: $dark;;
   cursor: default;
   opacity: 0.7;
   box-shadow: none;
@@ -2082,7 +2087,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   background-color: #cf2a0e;
 }
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-  color: #333333;
+  color: $dark;;
 }
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
   background-color: #f04124;
@@ -2331,7 +2336,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   margin-bottom: 0;
   text-align: center;
   bottom: 0;
-  background: #333333;
+  background: $dark;;
   width: 100%;
   padding: 10px 30px 20px;
   position: absolute;
@@ -2455,7 +2460,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
     opacity: 0.8;
   }
   .clearing-assembled .clearing-container .visible-img {
-    background: #333333;
+    background: $dark;;
     overflow: hidden;
     height: 85%;
   }
@@ -2477,7 +2482,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 100%;
   max-height: none;
   height: auto;
-  background: white;
+  background: $light;
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   z-index: 99;
@@ -2532,7 +2537,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 100%;
   max-height: none;
   height: auto;
-  background: white;
+  background: $light;
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   z-index: 99;
@@ -2580,7 +2585,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 100%;
   max-height: none;
   height: auto;
-  background: white;
+  background: $light;
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   z-index: 99;
@@ -2630,7 +2635,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 100%;
   max-height: none;
   height: auto;
-  background: white;
+  background: $light;
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   z-index: 99;
@@ -2697,7 +2702,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 100%;
   height: auto;
   max-height: none;
-  background: white;
+  background: $light;
   border: solid 1px #cccccc;
   font-size: 0.875rem;
   z-index: 99;
@@ -2778,7 +2783,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   border-color: white transparent transparent transparent;
 }
 .dropdown.button.secondary:before, button.dropdown.secondary:before {
-  border-color: #333333 transparent transparent transparent;
+  border-color: $dark transparent transparent transparent;
 }
 
 .flex-video {
@@ -2942,7 +2947,7 @@ select::-ms-expand {
 span.prefix, label.prefix {
   background: #f2f2f2;
   border-right: none;
-  color: #333333;
+  color: $dark;;
   border-color: #cccccc;
 }
 span.prefix.radius, label.prefix.radius {
@@ -2954,7 +2959,7 @@ span.prefix.radius, label.prefix.radius {
 span.postfix, label.postfix {
   background: #f2f2f2;
   border-left: none;
-  color: #333333;
+  color: $dark;;
   border-color: #cccccc;
 }
 span.postfix.radius, label.postfix.radius {
@@ -3119,7 +3124,7 @@ fieldset {
 }
 fieldset legend {
   font-weight: bold;
-  background: white;
+  background: $light;
   padding: 0 0.1875rem;
   margin: 0;
   margin-left: -0.1875rem;
@@ -3227,7 +3232,7 @@ label.error {
 .joyride-tip-guide {
   display: none;
   position: absolute;
-  background: #333333;
+  background: $dark;;
   color: white;
   z-index: 101;
   top: 0;
@@ -3258,11 +3263,11 @@ label.error {
   left: 22px;
   width: 0;
   height: 0;
-  border: 10px solid #333333;
+  border: 10px solid $dark;
 }
 .joyride-tip-guide .joyride-nub.top {
   border-top-style: solid;
-  border-color: #333333;
+  border-color: $dark;
   border-top-color: transparent !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
@@ -3270,7 +3275,7 @@ label.error {
 }
 .joyride-tip-guide .joyride-nub.bottom {
   border-bottom-style: solid;
-  border-color: #333333 !important;
+  border-color: $dark !important;
   border-bottom-color: transparent !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
@@ -3369,14 +3374,14 @@ label.error {
     left: inherit;
   }
   .joyride-tip-guide .joyride-nub.bottom {
-    border-color: #333333 !important;
+    border-color: $dark !important;
     border-bottom-color: transparent !important;
     border-left-color: transparent !important;
     border-right-color: transparent !important;
     bottom: -20px;
   }
   .joyride-tip-guide .joyride-nub.right {
-    border-color: #333333 !important;
+    border-color: $dark !important;
     border-top-color: transparent !important;
     border-right-color: transparent !important;
     border-bottom-color: transparent !important;
@@ -3385,7 +3390,7 @@ label.error {
     right: -20px;
   }
   .joyride-tip-guide .joyride-nub.left {
-    border-color: #333333 !important;
+    border-color: $dark !important;
     border-top-color: transparent !important;
     border-left-color: transparent !important;
     border-bottom-color: transparent !important;
@@ -3420,7 +3425,7 @@ kbd {
   margin-bottom: inherit;
   padding: 0.25rem 0.5rem 0.375rem;
   font-size: 0.6875rem;
-  background-color: #fcbf31;
+  background-color: $dark-hover;
   color: white;
 }
 .label.radius {
@@ -3439,11 +3444,11 @@ kbd {
 }
 .label.secondary {
   background-color: #e7e7e7;
-  color: #333333;
+  color: $dark;;
 }
 
 [data-magellan-expedition], [data-magellan-expedition-clone] {
-  background: white;
+  background: $light;
   z-index: 50;
   min-width: 100%;
   padding: 10px;
@@ -3834,13 +3839,13 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
   background: transparent;
 }
 ul.pagination li.current a {
-  background: #fcbf31;
+  background: $dark-hover;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-  background: #fcbf31;
+  background: $dark-hover;
 }
 ul.pagination li {
   float: left;
@@ -3872,7 +3877,7 @@ ul.pagination li {
   margin-bottom: 0;
 }
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
-  color: #333333;
+  color: $dark;;
 }
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
   line-height: 1;
@@ -3896,7 +3901,7 @@ ul.pagination li {
   margin-bottom: 0;
 }
 .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
-  color: #333333;
+  color: $dark;;
 }
 .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
   line-height: 1;
@@ -3906,7 +3911,7 @@ ul.pagination li {
   line-height: 1.4;
 }
 .panel.callout a:not(.button) {
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .panel.radius {
   border-radius: 3px;
@@ -3935,12 +3940,13 @@ ul.pagination li {
   background-color: #f6f6f6;
   padding: 0.9375rem 1.25rem;
   text-align: center;
-  color: #333333;
+  color: $dark;;
   font-weight: normal;
   font-size: 2rem;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-.pricing-table .descriptiffff00 background-color: white;
+.pricing-table .description {
+  background-color: $light;
   padding: 0.9375rem;
   text-align: center;
   color: #777777;
@@ -3950,16 +3956,16 @@ ul.pagination li {
   border-bottom: dotted 1px #dddddd;
 }
 .pricing-table .bullet-item {
-  background-color: white;
+  background-color: $light;
   padding: 0.9375rem;
   text-align: center;
-  color: #333333;
+  color: $dark;;
   font-size: 0.875rem;
   font-weight: normal;
   border-bottom: dotted 1px #dddddd;
 }
 .pricing-table .cta-button {
-  background-color: white;
+  background-color: $light;
   text-align: center;
   padding: 1.25rem 1.25rem 0;
 }
@@ -3973,7 +3979,7 @@ ul.pagination li {
   margin-bottom: 0.625rem;
 }
 .progress .meter {
-  background: #fcbf31;
+  background: $dark-hover;
   height: 100%;
   display: block;
 }
@@ -4045,7 +4051,7 @@ ul.pagination li {
   border-radius: 3px;
 }
 .range-slider.radius .range-slider-handle {
-  background: #fcbf31;
+  background: $dark-hover;
   border-radius: 3px;
 }
 .range-slider.radius .range-slider-handle:hover {
@@ -4056,7 +4062,7 @@ ul.pagination li {
   border-radius: 1000px;
 }
 .range-slider.round .range-slider-handle {
-  background: #fcbf31;
+  background: $dark-hover;
   border-radius: 1000px;
 }
 .range-slider.round .range-slider-handle:hover {
@@ -4079,7 +4085,7 @@ ul.pagination li {
   height: 1.375rem;
   border: 1px solid none;
   cursor: pointer;
-  background: #fcbf31;
+  background: $dark-hover;
 }
 .range-slider-handle:hover {
   background: #fbb40d;
@@ -4105,7 +4111,7 @@ dialog, .reveal-modal {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: $light;
   padding: 1.25rem;
   border: solid 1px #666666;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -4236,7 +4242,7 @@ dialog[open] {
 }
 .side-nav li a:not(.button) {
   display: block;
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
   color: #fdd26f;
@@ -4346,7 +4352,7 @@ dialog[open] {
   padding-left: 2rem;
 }
 .split.button.secondary span:before {
-  border-color: #333333 transparent transparent transparent;
+  border-color: $dark transparent transparent transparent;
 }
 .split.button.radius span {
   border-bottom-right-radius: 3px;
@@ -4398,7 +4404,7 @@ dialog[open] {
 .sub-nav li.active a {
   border-radius: 3px;
   font-weight: normal;
-  background: #fcbf31;
+  background: $dark-hover;
   padding: 0.1875rem 1rem;
   cursor: default;
   color: white;
@@ -4418,7 +4424,7 @@ div.switch {
   border-width: 1px;
   margin-bottom: 1.25rem;
   height: 2.25rem;
-  background: white;
+  background: $light;
   border-color: #cccccc;
 }
 div.switch label {
@@ -4507,12 +4513,12 @@ div.switch span:last-child {
 }
 div.switch span:last-child {
   border-color: #b3b3b3;
-  background: white;
+  background: $light;
   background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 980px #f3faf6, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke;
 }
 div.switch:hover span:last-child, div.switch:focus span:last-child {
-  background: white;
+  background: $light;
   background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
 }
 div.switch:active {
@@ -4583,7 +4589,7 @@ div.switch.round label {
 }
 
 table {
-  background: white;
+  background: $light;
   margin-bottom: 1.25rem;
   border: solid 1px #dddddd;
 }
@@ -4647,7 +4653,7 @@ table tfoot tr td {
   background: #e1e1e1;
 }
 .tabs dd.active a {
-  background: white;
+  background: $light;
 }
 .tabs.radius dd:first-child a {
   border-bottom-left-radius: 3px;
@@ -4735,11 +4741,11 @@ table tfoot tr td {
   border-bottom: dotted 1px #cccccc;
   cursor: help;
   font-weight: bold;
-  color: #333333;
+  color: $dark;;
 }
 .has-tip:hover, .has-tip:focus {
   border-bottom: dotted 1px #865e02;
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .has-tip.tip-left, .has-tip.tip-right {
   float: none !important;
@@ -4766,7 +4772,7 @@ table tfoot tr td {
   width: 0;
   height: 0;
   border: solid 5px;
-  border-color: transparent transparent #333333 transparent;
+  border-color: transparent transparent $dark transparent;
   top: -10px;
 }
 .tooltip > .nub.rtl {
@@ -4796,11 +4802,11 @@ table tfoot tr td {
 
 @media only screen and (min-width: 40.063em) {
   .tooltip > .nub {
-    border-color: transparent transparent #333333 transparent;
+    border-color: transparent transparent $dark transparent;
     top: -10px;
   }
   .tooltip.tip-top > .nub {
-    border-color: #333333 transparent transparent transparent;
+    border-color: $dark transparent transparent transparent;
     top: auto;
     bottom: -10px;
   }
@@ -4808,14 +4814,14 @@ table tfoot tr td {
     float: none !important;
   }
   .tooltip.tip-left > .nub {
-    border-color: transparent transparent transparent #333333;
+    border-color: transparent transparent transparent $dark;
     right: -10px;
     left: auto;
     top: 50%;
     margin-top: -5px;
   }
   .tooltip.tip-right > .nub {
-    border-color: transparent #333333 transparent transparent;
+    border-color: transparent $dark transparent transparent;
     right: auto;
     left: -10px;
     top: 50%;
@@ -4830,7 +4836,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #efe2d4;
+  background: $light;
 }
 .contain-to-grid .top-bar {
   margin-bottom: 0;
@@ -4864,7 +4870,7 @@ meta.foundation-mq-topbar {
   height: 100px;
   line-height: 100px;
   position: relative;
-  background: white;
+  background: $light;
   margin-bottom: 0;
 }
 .top-bar ul {
@@ -4906,7 +4912,7 @@ meta.foundation-mq-topbar {
 }
 .top-bar .name h1 a {
   font-weight: bold;
-  color: #803232;
+  color: $dark;
   width: 75%;
   display: block;
   padding: 0 20px;
@@ -4917,7 +4923,7 @@ meta.foundation-mq-topbar {
   top: 0;
 }
 .top-bar .toggle-topbar a {
-  color: #803232;
+  color: $dark;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -4938,7 +4944,7 @@ meta.foundation-mq-topbar {
   line-height: 33px;
   padding: 0;
   padding-right: 25px;
-  color: #803232;
+  color: $dark;
   position: relative;
 }
 .top-bar .toggle-topbar.menu-icon a::after {
@@ -4949,20 +4955,20 @@ meta.foundation-mq-topbar {
   width: 16px;
   top: 0;
   height: 0;
-  box-shadow: 0 10px 0 1px #666666, 0 16px 0 1px #666666, 0 22px 0 1px #666666;
+  box-shadow: 0 10px 0 1px $dark, 0 16px 0 1px $dark, 0 22px 0 1px $dark;
 }
 .top-bar.expanded {
   height: auto;
   background: transparent;
 }
 .top-bar.expanded .title-area {
-  background: white;
+  background: $light;
 }
 .top-bar.expanded .toggle-topbar a {
-  color: #803232;
+  color: $dark;
 }
 .top-bar.expanded .toggle-topbar a::after {
-  box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
+  box-shadow: 0 10px 0 1px $dark, 0 16px 0 1px $dark, 0 22px 0 1px $dark;
 }
 
 .top-bar-section {
@@ -4975,7 +4981,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   height: auto;
   display: block;
-  background: #803232;
+  background: $dark-hover;
   font-size: 16px;
   margin: 0;
 }
@@ -4989,66 +4995,61 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #803232;
+  color: $dark-hover;
   padding: 12px 0 12px 0;
   padding-left: 20px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   text-transform: none;
-  background: #c07272;
-}
-@media only screen and (max-width: 40em) {
-  .top-bar-section ul li > a {
-    color: #fff2e4;
-  }
+  background: $light;
 }
 .top-bar-section ul li > a.button {
   font-size: 1rem;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #fcbf31;
-  border-color: #eda703;
-  color: #803232;
+  background-color: #00ffff;
+  border-color: #ffff00;
+  color: $dark-menu;
 }
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
   background-color: #eda703;
 }
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-  color: #a05252;
+  color: $dark;
 }
 .top-bar-section ul li > a.button.secondary {
   background-color: #00ff00;
-  border-color: #ff0000;
-  color: #a05252;
+  border-color: #00ff00;
+  color: $dark-menu;
 }
 .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-  background-color: #ff0000;
+  background-color: #00ff00;
 }
 .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
   color: #00ff00;
 }
 .top-bar-section ul li > a.button.success {
-  background-color: #f000f0;
+  background-color: $dark;
   border-color: #368a55;
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
   background-color: #f0f000;
 }
 .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > a.button.alert {
   background-color: #f04124;
   border-color: #cf2a0e;
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
-  background-color: #cf2a0e;
+  background-color: #ffff00;
 }
 .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > button {
   font-size: 1rem;
@@ -5056,35 +5057,35 @@ meta.foundation-mq-topbar {
   padding-left: 20px;
   background-color: #ffff00;
   border-color: #eda703;
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
   background-color: #00ffff;
 }
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > button.secondary {
   background-color: #ff00ff;
   border-color: #b9b9b9;
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
   background-color: #ffff00;
 }
 .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > button.success {
   background-color: #ff00ff;
   border-color: #368a55;
-  color: #333333;
+  color: $dark;;
 }
 .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
   background-color: #00ffff;
 }
 .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
-  color: #0000ff;
+  color: #00ff00;
 }
 .top-bar-section ul li > button.alert {
   background-color: #f04124;
@@ -5098,17 +5099,16 @@ meta.foundation-mq-topbar {
   color: #00ff00;
 }
 .top-bar-section ul li:hover:not(.has-form) > a {
-  background: #a05252;
-  color: #efe2d4;
+  background: $dark-hover;
+  color: $light-super;
 }
-.top-bar-section ul li.active > a { /*small-only*/
-  background: #efe2d4;
-  color: #803232;
-  font-weight: bold;
+.top-bar-section ul li.active > a {
+  background: $dark-hover;
+  color: $light-super;
 }
-.top-bar-section ul li.active > a:hover { /*small-only*/
-  background: #a05252;
-  color: #efe2d4;
+.top-bar-section ul li.active > a:hover {
+  background: $dark-hover;
+  color: $light-super;
 }
 .top-bar-section .has-form {
   padding: 20px;
@@ -5122,7 +5122,7 @@ meta.foundation-mq-topbar {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent rgba(251, 51, 251, 0.4);
+  border-color: transparent transparent transparent $dark-arrow;
   border-left-style: solid;
   margin-right: 20px;
   margin-top: -4.5px;
@@ -5173,7 +5173,7 @@ meta.foundation-mq-topbar {
   margin-bottom: 0;
 }
 .top-bar-section .dropdown li.title h5 a {
-  color: #0000ff;
+  color: $light-super;
   line-height: 50px;
   display: block;
 }
@@ -5198,7 +5198,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #efe2d4;
+    background: $light;
     *zoom: 1;
     overflow: visible;
   }
@@ -5226,7 +5226,7 @@ meta.foundation-mq-topbar {
     top: 7px;
   }
   .top-bar.expanded {
-    background: #ff0000;
+    background: #00ff00;
   }
 
   .contain-to-grid .top-bar {
@@ -5251,28 +5251,28 @@ meta.foundation-mq-topbar {
     display: none;
   }
   .top-bar-section li.hover > a:not(.button) {
-    background: #ff0000;
-    color: #ff0000;
+    background: #00ff00;
+    color: #00ff00;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 20px;
     line-height: 100px;
-    background: #efe2d4;
+    background: $light;
   }
   .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background: #a05252;
-    color: #efe2d4;
+    background: $dark-hover;
+    color: $light-super;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 20px;
     line-height: 100px;
-    color: #a05252;
-    background: #fff2e4;
+    color: $dark-hover;
+    background: $light-super;
     font-weight: bold;
   }
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #a05252;
-    color: #efe2d4;
+    background: $dark-hover;
+    color: $light-super;
   }
   .top-bar-section .has-dropdown > a {
     padding-right: 40px !important;
@@ -5283,7 +5283,7 @@ meta.foundation-mq-topbar {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #c07272 transparent transparent transparent;
+    border-color: $dark-menu transparent transparent transparent;
     border-top-style: solid;
     margin-top: -2.5px;
     top: 50px;
@@ -5330,12 +5330,12 @@ meta.foundation-mq-topbar {
     background: #0000ff;
   }
   .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
-    color: #fff2e4;
-    background: #c07272;
+    color: $light-super;
+    background: $dark-menu;
   }
   .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
-    color: #fff2e4;
-    background: #a05252;
+    color: #0000ff;
+    background: #00ff00;
   }
   .top-bar-section .dropdown li label {
     white-space: nowrap;
@@ -5354,7 +5354,7 @@ meta.foundation-mq-topbar {
     width: 0;
   }
   .top-bar-section .has-form {
-    background: white;
+    background: $light;
     padding: 0 33.33333px;
     height: 100px;
   }
@@ -5378,8 +5378,8 @@ meta.foundation-mq-topbar {
     color: #ffff00;
   }
   .no-js .top-bar-section ul li:active > a {
-    background: white;
-    color: #fcbf31;
+    background: $light;
+    color: $dark-hover;
   }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -5603,12 +5603,12 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #fcbf31;
+  color: $dark-hover;
   text-decoration: none;
   line-height: inherit;
 }
 a:hover, a:focus {
-  color: #fbb207;
+  color: $light;
 }
 a img {
   border: none;
@@ -5635,10 +5635,10 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT sans";
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: #333333;
+  color: $dark;;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 1rem;
@@ -5787,7 +5787,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #333333;
+  color: $dark;;
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
@@ -6057,7 +6057,7 @@ blockquote p {
   display: block;
   line-height: 2.0625rem;
   padding: 0;
-  color: #333333;
+  color: $dark;;
   position: relative;
   -ms-transform: translate(0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -6149,7 +6149,7 @@ ul.off-canvas-list li a {
   transition: background 300ms ease;
 }
 ul.off-canvas-list li a:hover {
-  background: #f000f0;
+  background: $dark;
 }
 
 .move-right > .inner-wrap {
