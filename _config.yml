@@ -1,7 +1,11 @@
-name: Adalgiza V. Rimoli
+name: Oromie
+markdown: redcarpet
 pygments: true
 excerpt_separator: <!--more-->
 gems: [jekyll-paginate]
 paginate: 3
 paginate_path: "blog/page:num"
-url: ""
+sass:
+    sass_dir: _sass
+    style: :compressed
+#url: 'http://www.oromie.com.br/oromiedevel.github.io'

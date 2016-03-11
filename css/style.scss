@@ -1,3 +1,8 @@
+---
+---
+
+@import "colors";
+
 @font-face {
   font-family: 'child';
   src: url('../fonts/child/child.ttf') format('truetype');
@@ -31,19 +36,19 @@ h1, h2, h3, h4 {
 }
 
 .white {
-  background: #fff2e4;
+  background: $light-super;
 }
 
 .yellow {
-  background: #fcbf31;
+  background: $dark-hover;
 }
 
 .dark-blue {
-  background: #3d5766;
+  background: $dark-menu;
 }
 
 .light-yellow {
-  background: #fef6df;
+  background: $light;
 }
 
 .light-grey {
@@ -67,7 +72,7 @@ h1, h2, h3, h4 {
 }
 
 .light {
-  color: #803232;
+  color: $dark;
 }
 
 .button {
@@ -75,15 +80,16 @@ h1, h2, h3, h4 {
   letter-spacing: 3px;
   font-size: 14px;
   padding: 13px 30px 10px;
-  background: #fcbf31;
+  background: $dark-hover;
 }
 
 .button:hover {
-  background-color: rgba(252, 191, 49, 0.8);
+  background-color: $light;
+  color: $dark;
 }
 
 .button.white {
-  background: white;
+  background: $dark-menu;
 }
 .button.white:hover {
   background-color: rgba(255, 255, 255, 0.8);
@@ -95,7 +101,7 @@ h1, h2, h3, h4 {
   color: rgba(255, 255, 255, 1.0);
 }
 .button.boxed:hover {
-  background: #a05252;
+  background: $dark-hover;
 }
 
 .drop-letters {
@@ -145,10 +151,15 @@ h1, h2, h3, h4 {
   line-height: 60px;
 }
 
+.top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
+  background: $light-super;
+  color: $dark-hover;
+}
+
 /*special title */
 .special-title i {
   font-size: 50px;
-  color: #fcbf31;
+  color: $dark-hover;
   margin-bottom: 15px;
   display: block;
 }
@@ -167,13 +178,13 @@ h1, h2, h3, h4 {
   width: 100px;
   height: 5px;
   margin: 0 auto;
-  border-bottom: 1px solid #fcbf31;
+  border-bottom: 1px solid $dark-hover;
 }
 
 /*icon-text */
 .icon-text i {
   color: white;
-  background: #4caaf2;
+  background: $dark-hover;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
@@ -187,7 +198,7 @@ h1, h2, h3, h4 {
   float: left;
 }
 .icon-text i.yellow {
-  background: #fcbf31;
+  background: $dark-hover;
 }
 .icon-text h3, .icon-text p {
   margin-left: 60px;
@@ -195,8 +206,8 @@ h1, h2, h3, h4 {
 
 .icon-text-boxed i {
   font-size: 88px;
-  color: #fcbf31;
-  border: 1px solid #fcbf31;
+  color: $dark-hover;
+  border: 1px solid $dark-hover;
   padding: 35px 0;
   display: block;
   width: 88%;
@@ -208,7 +219,7 @@ h1, h2, h3, h4 {
 }
 
 .icon-text-boxed:hover i {
-  background: #fcbf31;
+  background: $dark-hover;
   color: white;
 }
 
@@ -227,7 +238,7 @@ h1, h2, h3, h4 {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background: #fcbf31;
+  background: $dark-hover;
   -webkit-transition: color 0.2s linear;
   -moz-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
@@ -239,7 +250,7 @@ h1, h2, h3, h4 {
 
 .icon-text-circle:hover i {
   background: none;
-  color: #fcbf31;
+  color: $dark-hover;
 }
 
 /*call-to-action */
@@ -247,6 +258,7 @@ h1, h2, h3, h4 {
   font-size: 1.375rem;
   font-family: "droid serif", georgia;
   font-style: italic;
+  color: $light;
 }
 
 /*milestone */
@@ -281,7 +293,7 @@ h1, h2, h3, h4 {
 }
 .bars p.highlighted {
   width: 0;
-  background: #fcbf31;
+  background: $dark-hover;
   height: 14px;
 }
 
@@ -306,7 +318,7 @@ h1, h2, h3, h4 {
 
 .member.active p.active-line {
   height: 4px;
-  background: #fcbf31;
+  background: $dark-hover;
   position: relative;
   margin: 0;
 }
@@ -339,7 +351,7 @@ h1, h2, h3, h4 {
 }
 .socials i.yellow {
   color: white;
-  background: #803232;
+  background: $dark;
 }
 .socials i.yellow:hover {
   background-color: rgba(252, 191, 49, 0.8);
@@ -379,7 +391,7 @@ p.nav-control a span {
   background: none;
 }
 p.nav-control a.current span {
-  background: white;
+  background: $light;
 }
 
 /*form */
@@ -397,9 +409,9 @@ textarea {
   margin-left: 110px;
 }
 #comments-form input[type="text"], #comments-form input[type="password"], #comments-form input[type="date"], #comments-form input[type="datetime"], #comments-form input[type="datetime-local"], #comments-form input[type="month"], #comments-form input[type="week"], #comments-form input[type="email"], #comments-form input[type="number"], #comments-form input[type="search"], #comments-form input[type="tel"], #comments-form input[type="time"], #comments-form input[type="url"], #comments-form textarea {
-  background: white;
+  background: $light;
   border: 1px solid #e9e9e9;
-  color: #333333;
+  color: $dark;;
 }
 #comments-form label {
   font-size: 1rem;
@@ -480,7 +492,7 @@ textarea {
   background: none;
 }
 .testimonials .orbit-container .orbit-bullets li.active {
-  background: white;
+  background: $dark-menu;
 }
 
 /* gallery */
@@ -512,7 +524,7 @@ ul.gallery li a .overlay {
   transition: all 0.2s linear;
 }
 ul.gallery li a h3 {
-  color: #fcbf31;
+  color: $dark-hover;
   margin-bottom: 10px;
 }
 ul.gallery li a p {
@@ -580,10 +592,10 @@ ul#filter li a {
   color: #999999;
 }
 ul#filter li.current {
-  border: 1px solid #fcbf31;
+  border: 1px solid $dark-hover;
 }
 ul#filter li.current a {
-  color: #fcbf31;
+  color: $dark-hover;
 }
 
 ul.info {
@@ -593,7 +605,7 @@ ul.info a {
   margin-right: 5px;
 }
 ul.info i {
-  border: 1px solid #fcbf31;
+  border: 1px solid $dark-hover;
   padding: 5px;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
@@ -601,7 +613,7 @@ ul.info i {
   transition: all 0.1s linear;
 }
 ul.info i:hover {
-  background: #fcbf31;
+  background: $dark-hover;
   color: white;
 }
 
@@ -620,10 +632,10 @@ ul.info i:hover {
   font-size: 0.875rem;
 }
 .post .info p a {
-  color: #333333;
+  color: $dark;;
 }
 .post .info p a:hover {
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .post .other-info {
   list-style: none;
@@ -639,7 +651,7 @@ ul.info i:hover {
   color: #999999;
 }
 .post .other-info li a:hover {
-  color: #fcbf31;
+  color: $dark-hover;
 }
 .post .content .orbit-container {
   margin-bottom: 20px;
@@ -675,25 +687,25 @@ ul.info i:hover {
   font-size: 0.875rem;
 }
 .pages ul a {
-  color: #333333;
+  color: $dark;;
 }
 .pages ul a:hover {
-  color: #fcbf31;
+  color: $dark-hover;
 }
 
 .timestamp {
   width: 80px;
-  border: 1px solid #fcbf31;
+  border: 1px solid $dark-hover;
 }
 .timestamp .month {
-  background: #fcbf31;
+  background: $dark-hover;
   color: white;
-  border-bottom: 1px solid #fcbf31;
+  border-bottom: 1px solid $dark-hover;
   display: block;
   padding: 5px 0;
 }
 .timestamp .date {
-  color: #fcbf31;
+  color: $dark-hover;
   display: block;
   padding: 20px 0;
   font-size: 36px;

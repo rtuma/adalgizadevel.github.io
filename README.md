@@ -1,1 +1,0 @@
-# adalgizadevel.github.io
