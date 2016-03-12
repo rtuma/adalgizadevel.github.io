@@ -1,7 +1,6 @@
 - image: capa-1.png
   desc_location: left
   desc:
-    <div class='two spacing'></div>
     <a class='button boxed'>Obra da artista</a>
 #- image: slide-2.jpg
 #  desc_location: right
