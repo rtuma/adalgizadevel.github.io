@@ -1,5 +1,5 @@
-name: Oromie
-markdown: redcarpet
+name: adalgiza
+markdown: kramdown
 pygments: true
 excerpt_separator: <!--more-->
 gems: [jekyll-paginate]
