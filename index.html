@@ -26,30 +26,30 @@ layout: default
 title: Oromie
 section_id: home
 works:
-  - image: work-1.jpg
-    title: Beautiful Girl
-    category: Design &amp; Development
-  - image: work-2.jpg
-    title: Look at me
-    category: Design &amp; Development
-  - image: work-3.jpg
-    title: Am I cute
-    category: Design &amp; Development
-  - image: work-4.jpg
-    title: Umbrella
-    category: Design &amp; Development
-  - image: work-5.jpg
-    title: Canned Bros
-    category: Design &amp; Development
-  - image: work-6.jpg
-    title: Hale
-    category: Design &amp; Development
-  - image: work-7.jpg
-    title: A beautiful day
-    category: Design &amp; Development
-  - image: work-8.jpg
-    title: Flower book
-    category: Design &amp; Development
+  - image: quadro-1.png
+    title: 1,90 x 1,30
+    category: Percepções internas
+  - image: quadro-2.png
+    title: 
+    category: 
+  - image: quadro-3.png
+    title: 
+    category: 
+  - image: quadro-4.png
+    title: 
+    category: 
+  - image: quadro-5.png
+    title: 
+    category: 
+  - image: quadro-6.png
+    title: 
+    category: 
+  - image: quadro-7.png
+    title: 
+    category: 
+  - image: quadro-8.png
+    title: 
+    category: 
 
 services:
   -
@@ -163,7 +163,7 @@ bars:
   </div>
 </div>
 
-<div class='full light-yellow'>
+<!--div class='full light-yellow'>
   <div class='row'>
     <div class='special-title centered-text'>
       <i class='icon-users'></i>
@@ -196,16 +196,18 @@ bars:
       </ul>
     </div>
   </div>
-</div>
+</div-->
 
+<!--
 {% include whys.html %}
+-->
 
 <div class='full'>
   <div class='row'>
     <div class='special-title centered-text'>
       <i class='icon-star'></i>
       <h2>Portfolio</h2>
-      <p>Our best and featured works so far</p>
+      <p>Principais obras</p>
       <p class='shortline'></p>
     </div>
   </div>
@@ -215,7 +217,7 @@ bars:
   {% for work in page.works %}
     <li>
       <a>
-        <img src='{{site.url}}/images/{{ work.image }}'>
+        <img src='{{site.url}}/images/{{ work.image }}' style="border:5px solid #f5d5a6">
         <div class='overlay'>
           <div class='thumb-info'>
             <h3>{{ work.title }}</h3>
@@ -227,7 +229,7 @@ bars:
   {% endfor %}
 </ul>
 
-<div class='full dark-blue no-padding'>
+<!--div class='full dark-blue no-padding'>
   <div class='two spacing'></div>
   <div class='row'>
     <div class='call-to-action light'>
@@ -240,10 +242,10 @@ bars:
     </div>
   </div>
   <div class='two spacing'></div>
-</div>
+</div-->
 
 
-<div class='full white'>
+<!--div class='full white'>
   <div class='row'>
     <div class='special-title centered-text'>
       <i class='icon-map'></i>
@@ -268,9 +270,9 @@ bars:
       <div class="spacing"></div>
     {% endunless %}
   {% endfor %}
-</div>
+</div-->
 
-<div class='full bg-1'>
+<!--div class='full bg-1'>
   <div class='row'>
     {% for milestone in page.milestones %}
       <div class='medium-3 large-3 columns'>
@@ -281,14 +283,15 @@ bars:
       </div>
     {% endfor %}
   </div>
-</div>
+</div-->
 
 
 
 
 {% include testimonials.html bg="bg-2" %}
 
+<!--
 {% include clients.html %}
-
+-->
 
 {% include get-in-touch.html %}

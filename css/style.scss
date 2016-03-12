@@ -71,6 +71,10 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+.testmonial-dark {
+  color: #000000;
+}
+
 .light {
   color: $dark;
 }
@@ -115,12 +119,12 @@ h1, h2, h3, h4 {
 }
 
 .bg-1 {
-  background: url(../images/bg-1.jpg) center center no-repeat;
+  background: url(../images/clients-background.png) center center no-repeat;
   background-size: cover;
 }
 
 .bg-2 {
-  background: url(../images/bg-2.jpg) center center no-repeat;
+  background: url(../images/testmonials.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -161,7 +165,7 @@ h1, h2, h3, h4 {
 /*special title */
 .special-title i {
   font-size: 50px;
-  color: $dark-hover;
+  color: #000000;
   margin-bottom: 15px;
   display: block;
 }
@@ -375,7 +379,7 @@ h1, h2, h3, h4 {
 
 /*testimonials */
 p.quote {
-  border: 1px solid rgba(128, 50, 50, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0);
   padding: 20px 50px;
   font-family: "droid serif", georgia;
   font-style: italic;
@@ -501,7 +505,7 @@ textarea {
   background: none;
 }
 .testimonials .orbit-container .orbit-bullets li.active {
-  background: $dark-menu;
+  background: #000000;
 }
 
 /* gallery */
