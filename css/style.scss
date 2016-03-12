@@ -96,9 +96,11 @@ h1, h2, h3, h4 {
 }
 
 .button.boxed {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid $light;
+  font-weight: bold;
   background: none;
-  color: rgba(255, 255, 255, 1.0);
+  color: $light;
+  background: rgba(168,99,22,0.7)
 }
 .button.boxed:hover {
   background: $dark-hover;
@@ -349,19 +351,26 @@ h1, h2, h3, h4 {
   float: left;
   margin-right: 5px;
 }
-.socials i.yellow {
+.socials i.facebook {
   color: white;
   background: $dark;
 }
-.socials i.yellow:hover {
-  background-color: rgba(252, 191, 49, 0.8);
+.socials i.facebook:hover {
+  background-color: #47639E;
 }
-.socials i.grey {
-  color: #cccccc;
-  background: #363636;
+.socials i.pinterest {
+  color: white;
+  background: $dark;
 }
-.socials i.grey:hover {
-  background-color: rgba(54, 54, 54, 0.6);
+.socials i.pinterest:hover {
+  background-color: #BD081C;
+}
+.socials i.mail {
+  color: white;
+  background: $dark;
+}
+.socials i.mail:hover {
+  background-color: #000000;
 }
 
 /*testimonials */
