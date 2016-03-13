@@ -1,25 +1,20 @@
 - name: Home
   path: index.html
   section_id: home
+- name: Atelier
+  path: atelier.html
+  section_id: atelier
+- name: Galeria
+  path: galeria.html
+  section_id: galeria
+- name: Sobre
+  path: sobre.html
+  section_id: sobre
   children:
-    - name: Home default
-      path: index.html
-    - name: Home alternative
-      path: index-alternative.html
-- name: Services
-  path: services.html
-  section_id: services
-- name: About
-  path: about.html
-  section_id: about
-- name: Portfolio
-  path: portfolio.html
-  section_id: portfolio
-  children:
-    - name: Portfolio
-      path: portfolio.html
-    - name: Portfolio single
-      path: portfolio-item.html
-- name: Blog
-  path: blog/
-  section_id: blog
+    - name: Sobre a artista
+      path: sobre.html
+    - name: Curriculo
+      path: curriculo.html
+- name: Contato
+  path: contato.html
+  section_id: contato

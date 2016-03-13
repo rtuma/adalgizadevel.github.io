@@ -1,10 +1,7 @@
 - image: capa-1.png
   desc_location: left
   desc:
-    <h2>&#xe810;</h2>
-    <p class="slidesp">Alma que emana pelos poros</p>
-    <div class='two spacing'></div>
-    <a class='button boxed'>Conheça nossa coleção</a>
+    <a class='button boxed'>Obra da artista</a>
 #- image: slide-2.jpg
 #  desc_location: right
 #  desc:
