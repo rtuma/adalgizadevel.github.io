@@ -193,8 +193,15 @@ select {
 .columns {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
-  width: 100%;
+  width: 50%;
   float: left;
+}
+
+.columns-right {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 50%;
+  float: right;
 }
 
 @media only screen {
