@@ -3,6 +3,89 @@
 layout: default
 title: Adalgiza V. Rímoli
 section_id: home
+works:
+  - image: quadro-1.png
+    title: 1,90 x 1,30
+    category: Percepções internas
+  - image: quadro-2.png
+    title: 
+    category: 
+  - image: quadro-3.png
+    title: 
+    category: 
+  - image: quadro-4.png
+    title: 
+    category: 
+  - image: quadro-5.png
+    title: 
+    category: 
+  - image: quadro-6.png
+    title: 
+    category: 
+  - image: quadro-7.png
+    title: 
+    category: 
+  - image: quadro-8.png
+    title: 
+    category: 
+
+services:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+
+milestones:
+  - from: 0
+    to: 69
+    title: Projects completed
+  - from: 0
+    to: 726
+    title: Cups of coffee offered
+  - from: 0
+    to: 59
+    title: Happy clients
+  - from: 0
+    to: 121
+    title: Articles published
+
+bars:
+  - title: Web design
+    percent: 84
+  - title: Web development
+    percent: 95
+  - title: Site management
+    percent: 70
+  - title: Branding
+    percent: 61
 
 ---
 
@@ -10,7 +93,33 @@ section_id: home
 
 {% include members.html %}
 
-{% include portfolio.html %}
+<div class='full'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-star'></i>
+      <h2>Portfolio</h2>
+      <p>Principais obras</p>
+      <p class='shortline'></p>
+    </div>
+  </div>
+</div>
+
+<ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
+  {% for work in page.works %}
+    <li>
+      <a>
+        <img src='{{site.url}}/images/{{ work.image }}' style="border:5px solid #f5d5a6">
+        <div class='overlay'>
+          <div class='thumb-info'>
+            <h3>{{ work.title }}</h3>
+            <p>{{ work.category }}</p>
+          </div>
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
 
 {% include testimonials.html bg="bg-2" %}
 
