@@ -1,0 +1,21 @@
+  - image: adalgiza.png
+    name: Adalgiza V. Rímoli
+    position: Artista plástica
+    desc: Busco em meu trabalho referências em fragmentos urbanos, possibilitando estudos que visualizam o registro da ação do tempo, as interferências do homem, resquícios de uma vida passada e suas marcas. Como ponto de partida de meu processo de criação, utilizo a fotografia como ferramenta para estancar a ação do tempo, subtraindo dessas imagens fragmentos e registrando-os em meus trabalhos. Para isso, aproprio-me de recortes, traços, cores e grafismos com o intuito de sintetizá-los, buscando, a partir da diversidade de materiais e técnicas, atingir com a minha poética algo que não vi, mas senti.
+    socials:
+      - name: phone
+        link: "#members"
+        color: mail
+      - name: facebook
+        link: https://www.facebook.com/adalgiza.vazrimoli
+        color: facebook
+      - name: facebook
+        link: https://www.facebook.com/Adalgiza-V-Rímoli-355742287923254
+        color: facebook
+      - name: pinterest
+        link: https://br.pinterest.com/adalgizav/
+        color: pinterest
+      - name: mail
+        link: mailto:adalgiza.vaz@uol.com.br
+        color: mail
+
