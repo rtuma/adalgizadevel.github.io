@@ -13,7 +13,7 @@
 <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
   {% for work in site.data.portfolio %}
     <li>
-      <figure>
+      <figure data-index='{{ work.index }}'>
       <a href='{{ site.url }}images/{{ work.image-full }}' itemprop="contentUrl" data-size="1000x667" data-index="0">
         <img src='{{site.url}}images/{{ work.image }}'>
         <div class='overlay'>
@@ -129,7 +129,8 @@ var pswp = document.querySelectorAll('.pswp')[0];
 $pic.on('click', 'figure', function(event) {
     event.preventDefault();
      
-    var $index = $(this).index();
+    //var $index = $(this).index();
+    var $index = parseInt($(this).attr('data-index')) - 1;
     var options = {
         index: $index,
         bgOpacity: 0.7,

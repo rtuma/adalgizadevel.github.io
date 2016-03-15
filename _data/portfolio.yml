@@ -1,32 +1,40 @@
   - image: quadro-1.png
     image-full: quadro-1-grande.png
+    index: 1
     title: 1,90 x 1,30
     category: Percepções internas
   - image: quadro-2.png
     image-full: quadro-2-grande.png
+    index: 2
     title:
     category:
   - image: quadro-3.png
     image-full: quadro-3-grande.png
+    index: 3
     title:
     category:
   - image: quadro-4.png
     image-full: quadro-4-grande.png
+    index: 4
     title:
     category:
   - image: quadro-5.png
     image-full: quadro-5-grande.png
+    index: 5
     title:
     category:
   - image: quadro-6.png
     image-full: quadro-6-grande.png
+    index: 6
     title:
     category:
   - image: quadro-7.png
     image-full: quadro-7-grande.png
+    index: 7
     title:
     category:
   - image: quadro-8.png
     image-full: quadro-8-grande.png
+    index: 8
     title:
     category:
