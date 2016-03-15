@@ -8,4 +8,4 @@ paginate_path: "blog/page:num"
 sass:
     sass_dir: _sass
     style: :compressed
-url: 'http://rtuma.github.io/adalgizadevel.github.io/'
+#url: 'http://rtuma.github.io/adalgizadevel.github.io/'
