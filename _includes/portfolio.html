@@ -110,14 +110,19 @@ $('div.portfolio-index').each( function() {
                     $size   = $(this).data('size').split('x'),
                     $width  = $size[0],
                     $height = $size[1];
+
+                    var img = document.createElement('img');
+                    img.src = $href;
+
+                img.onload = function() {
+                    var item = {
+                        src : $href,
+                        w   : img.width,
+                        h   : img.height
+                    }
  
-                var item = {
-                    src : $href,
-                    w   : $width,
-                    h   : $height
+                    items.push(item);
                 }
- 
-                items.push(item);
             });
             //return items;
         }
