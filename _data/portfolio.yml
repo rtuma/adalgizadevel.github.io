@@ -1,32 +1,32 @@
   - image: quadro-1.png
-    image-full: atelier.png
+    image-full: quadro-1-grande.png
     title: 1,90 x 1,30
     category: Percepções internas
   - image: quadro-2.png
-    image-full: avatar.png
+    image-full: quadro-2-grande.png
     title:
     category:
   - image: quadro-3.png
-    image-full: atelier.png
+    image-full: quadro-3-grande.png
     title:
     category:
   - image: quadro-4.png
-    image-full: avatar.png
+    image-full: quadro-4-grande.png
     title:
     category:
   - image: quadro-5.png
-    image-full: atelier.png
+    image-full: quadro-5-grande.png
     title:
     category:
   - image: quadro-6.png
-    image-full: avatar.png
+    image-full: quadro-6-grande.png
     title:
     category:
   - image: quadro-7.png
-    image-full: atelier.png
+    image-full: quadro-7-grande.png
     title:
     category:
   - image: quadro-8.png
-    image-full: avatar.png
+    image-full: quadro-8-grande.png
     title:
     category:
