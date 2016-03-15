@@ -13,9 +13,9 @@
 <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
   {% for work in site.data.portfolio %}
     <li>
-      <figure data-index='{{ work.index }}'>
+      <figure data-index='{{ work.index }}' style='margin: 7px;'>
       <a href='{{ site.url }}images/{{ work.image-full }}' itemprop="contentUrl" data-size="1000x667" data-index='{{ work.index }}'>
-        <img src='{{site.url}}images/{{ work.image }}'>
+        <img src='{{site.url}}images/{{ work.image }}' style='border: 0px; display: block;'>
         <div class='overlay'>
           <div class='thumb-info'>
             <h3>{{ work.title }}</h3>
