@@ -110,6 +110,7 @@ $('div.portfolio-index').each( function() {
                     $width  = $size[0],
                     $height = $size[1];
 
+                    var id = parseInt($(this).attr('data-index')) - 1;
                     var img = document.createElement('img');
                     img.src = $href;
 
@@ -120,7 +121,7 @@ $('div.portfolio-index').each( function() {
                         h   : img.height
                     }
  
-                    items[parseInt($(this).attr('data-index')) - 1] = item;
+                    items[id] = item;
                 }
             });
         }
