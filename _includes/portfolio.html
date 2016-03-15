@@ -14,7 +14,7 @@
   {% for work in site.data.portfolio %}
     <li>
       <figure data-index='{{ work.index }}'>
-      <a href='{{ site.url }}images/{{ work.image-full }}' itemprop="contentUrl" data-size="1000x667" data-index="0">
+      <a href='{{ site.url }}images/{{ work.image-full }}' itemprop="contentUrl" data-size="1000x667" data-index='{{ work.index }}'>
         <img src='{{site.url}}images/{{ work.image }}'>
         <div class='overlay'>
           <div class='thumb-info'>
@@ -120,7 +120,7 @@ $('div.portfolio-index').each( function() {
                         h   : img.height
                     }
  
-                    items[i] = item;
+                    items[parseInt($(this).attr('data-index')) - 1] = item;
                 }
             });
         }
