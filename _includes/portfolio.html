@@ -100,12 +100,11 @@
 
 <script type="text/javascript">
 var $pic;
-var items = [];
+var items = new Array(8); // Tamanho da galeria!!
 $('div.portfolio-index').each( function() {
         $pic     = $(this),
         getItems = function() {
-            //var items = [];
-            $pic.find('a').each(function() {
+            $pic.find('a').each(function(i, v) {
                 var $href   = $(this).attr('href'),
                     $size   = $(this).data('size').split('x'),
                     $width  = $size[0],
@@ -121,10 +120,9 @@ $('div.portfolio-index').each( function() {
                         h   : img.height
                     }
  
-                    items.push(item);
+                    items[i] = item;
                 }
             });
-            //return items;
         }
  
     var items2 = getItems();
@@ -135,7 +133,7 @@ $pic.on('click', 'figure', function(event) {
     event.preventDefault();
      
     //var $index = $(this).index();
-    var $index = parseInt($(this).attr('data-index'));
+    var $index = parseInt($(this).attr('data-index')) - 1;
     var options = {
         index: $index,
         bgOpacity: 0.7,
