@@ -78,9 +78,9 @@ works:
 <div class='full'>
   <div class='row'>
     <div class='special-title centered-text'>
-      <i class='icon-star'></i>
-      <h2>Portfolio</h2>
-      <p>Our best and featured works so far</p>
+      <i class='icon-star' style='color: #454545;'></i>
+      <h2>Galeria</h2>
+      <p>Obra da artista</p>
       <p class='shortline'></p>
     </div>
   </div>
@@ -94,9 +94,9 @@ works:
         <a data-cat='all' href='#'>All</a>
       </li>
       {% for category in page.categories %}
-        <li>
+        <!--li>
           <a data-cat='{{ category.name | downcase | replace: ' ', '-' }}' href='#'>{{category.name}}</a>
-        </li>
+        </li-->
       {% endfor %}
     </ul>
     <div class='spacing'></div>
