@@ -88,6 +88,29 @@ img {
   max-width: none !important;
 }
 
+.videoWrapper {
+    float: none;
+    clear: both;
+    width: 700px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.videoWrapper iframe,
+.videoWrapper object,
+.videoWrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 400px;
+}
+
 .slidesp {
   font-family: 'child';
 }
