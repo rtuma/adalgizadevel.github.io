@@ -1,14 +1,15 @@
+- image: capa-3.png
+  desc_location: left
+  desc:
+    <a class='button boxed' href='galeria.html'>Obra da artista</a>
+- image: capa-2.png
+  desc_location: right
+  desc:
+    <a class='button boxed' href='sobre.html'>Sobre a artista</a>
 - image: capa-1.png
   desc_location: left
   desc:
-    <a class='button boxed'>Obra da artista</a>
-#- image: slide-2.jpg
-#  desc_location: right
-#  desc:
-#    <h2>Creative Design</h2>
-#    <p>Focus on every detail element.</p>
-#    <div class='two spacing'></div>
-#    <a class='button boxed'>Learn More</a>
+    <a class='button boxed' href='atelier.html'>Conheça o atelier</a>
 #- image: slide-3.jpg
 #  desc_location: left
 #  desc:

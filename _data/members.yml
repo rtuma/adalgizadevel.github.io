@@ -12,6 +12,9 @@
       - name: facebook
         link: https://www.facebook.com/Adalgiza-V-Rímoli-355742287923254
         color: facebook
+      - name: instagram
+        link: https://www.instagram.com/adalgizaartistaplastica/
+        color: mail
       - name: pinterest
         link: https://br.pinterest.com/adalgizav/
         color: pinterest

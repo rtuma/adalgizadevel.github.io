@@ -2,77 +2,7 @@
 layout: default
 title: Portfolio
 section_id: portfolio
-categories:
-  - name: Graphic Design
-  - name: Web Design
-  - name: Brand
-  - name: Development
-  - name: Print
 
-works:
-  - image: work-1.jpg
-    title: Beautiful Girl
-    categories:
-      - name: Graphic Design
-  - image: work-2.jpg
-    title: Look at me
-    categories:
-      - name: Web Design
-      - name: Print
-  - image: work-3.jpg
-    title: Am I cute
-    categories:
-      - name: Brand
-  - image: work-4.jpg
-    title: Umbrella
-    categories:
-      - name: Development
-  - image: work-5.jpg
-    title: Canned Bros
-    categories:
-      - name: Print
-      - name: Brand
-  - image: work-6.jpg
-    title: Hale
-    categories:
-      - name: Web Design
-  - image: work-7.jpg
-    title: A beautiful day
-    categories:
-      - name: Web Design
-  - image: work-8.jpg
-    title: Flower book
-    categories:
-      - name: Graphic Design
-  - image: work-1.jpg
-    title: Beautiful Girl
-    categories:
-      - name: Development
-      - name: Print
-  - image: work-2.jpg
-    title: Look at me
-    categories:
-      - name: Brand
-  - image: work-3.jpg
-    title: Am I cute
-    categories:
-      - name: Web Design
-  - image: work-4.jpg
-    title: Umbrella
-    categories:
-      - name: Print
-  - image: work-5.jpg
-    title: Canned Bros
-    categories:
-      - name: Graphic Design
-  - image: work-6.jpg
-    title: Hale
-    categories:
-      - name: Development
-  - image: work-7.jpg
-    title: A beautiful day
-    categories:
-      - name: Print
 ---
 
 <div class='full'>
@@ -93,18 +23,20 @@ works:
       <li class='current'>
         <a data-cat='all' href='#'>All</a>
       </li>
-      {% for category in page.categories %}
-        <!--li>
+      {% for category in site.data.categories %}
+        <li>
           <a data-cat='{{ category.name | downcase | replace: ' ', '-' }}' href='#'>{{category.name}}</a>
-        </li-->
+        </li>
       {% endfor %}
     </ul>
     <div class='spacing'></div>
+    <div class='gallery-index'>
     <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-3'>
-      {% for work in page.works %}
+      {% for work in site.data.gallery %}
         <li class='{{ work.categories | map:"name" | join:"##" | downcase | replace:' ', '-' | replace:'##', ' '}}'>
-          <a>
-            <img src='{{site.url}}/images/{{work.image}}'>
+          <figure data-index='{{ work.index }}' style='margin: 7px;'>
+          <a href='{{ site.url }}gallery/{{ work.image-full }}' itemprop="contentUrl" data-size="1000x667" data-index='{{ work.index }}' >
+            <img src='{{site.url}}gallery/{{work.image}}'>
             <div class='overlay'>
               <div class='thumb-info'>
                 <h3>{{work.title}}</h3>
@@ -112,12 +44,132 @@ works:
               </div>
             </div>
           </a>
+          </figure>
         </li>
       {% endfor %}
     </ul>
+    </div>
   </div>
 </div>
 
 
 <div class="three spacing"></div>
 <div class="three spacing"></div>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+var $pic;
+var items = new Array(5); // Tamanho da galeria!!
+$('div.gallery-index').each( function() {
+        $pic     = $(this),
+        getItems = function() {
+            $pic.find('a').each(function(i, v) {
+                var $href   = $(this).attr('href'),
+                    $size   = $(this).data('size').split('x'),
+                    $width  = $size[0],
+                    $height = $size[1];
+
+                    var id = parseInt($(this).attr('data-index')) - 1;
+                    var img = document.createElement('img');
+                    img.src = $href;
+
+                img.onload = function() {
+                    var item = {
+                        src : $href,
+                        w   : img.width,
+                        h   : img.height
+                    }
+ 
+                    items[id] = item;
+                }
+            });
+        }
+ 
+    var items2 = getItems();
+});
+
+var pswp = document.querySelectorAll('.pswp')[0];
+$pic.on('click', 'figure', function(event) {
+    event.preventDefault();
+     
+    //var $index = $(this).index();
+    var $index = parseInt($(this).attr('data-index')) - 1;
+    var options = {
+        index: $index,
+        bgOpacity: 0.7,
+        showHideOpacity: true
+    }
+     
+    // Initialize PhotoSwipe
+    var lightBox = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
+    lightBox.init();
+});
+
+</script>
+
