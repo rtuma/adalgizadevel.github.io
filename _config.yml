@@ -1,6 +1,7 @@
 name: Adalgiza V. Rimoli
 markdown: kramdown
-pygments: true
+pygments: false
+highlighter: rouge
 excerpt_separator: <!--more-->
 gems: [jekyll-paginate]
 paginate: 3
